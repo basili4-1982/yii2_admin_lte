@@ -1,0 +1,19 @@
+{
+    "name": "basili4/yii2_admin_lte",
+    "type": "composer-plugin",
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "fxp/composer-asset-plugin": "^1.3",
+        "yiisoft/yii2-debug": "^2.0",
+        "yiisoft/yii2-gii": "^2.0",
+        "yiisoft/yii2-jui": "^2.0",
+        "almasaeed2010/adminlte": "^2.3",
+        "codeception/codeception": "*"
+    },
+    "authors": [
+        {
+            "name": "basili4",
+            "email": "basili4.1982@gmail.com"
+        }
+    ]
+}
