@@ -22,6 +22,5 @@ class DeployController extends Controller
         exec('git merge develop');
         exec('git merge push');
         exec('git merge push');
-        exec('git merge push --tags');
     }
 }
