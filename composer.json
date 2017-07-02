@@ -10,6 +10,9 @@
         "almasaeed2010/adminlte": "^2.3",
         "codeception/codeception": "*"
     },
+    "require-dev": {
+        "phpmd/phpmd" : "@stable"
+    },
     "authors": [
         {
             "name": "basili4",
