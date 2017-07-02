@@ -53,7 +53,8 @@ $config = [
         */
     ],
     'aliases' => [
-        '@bower' => realpath($basePath."/../vendor/bower-asset")
+        '@bower' => realpath($basePath."/../vendor/bower-asset"),
+        '@yii_gii'=>realpath($basePath."/../vendor/yiisoft/yii2-gii")
     ],
     'params' => $params,
 ];
@@ -74,7 +75,7 @@ if (YII_ENV_DEV) {
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        //'allowedIPs' => ['127.0.0.1', '::1'],
+        'allowedIPs' => ['*'],
     ];
 }
 
