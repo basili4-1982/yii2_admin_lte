@@ -13,7 +13,6 @@
         'modules'    => [
             'admin' => [
                 'class' => 'vendor\basili4\adminlte\admin',
-                //'class' => 'app\modules\admin',
             ],
         ],
         'components' => [
@@ -53,7 +52,7 @@
                 'enablePrettyUrl' => true,
                 'showScriptName'  => false,
                 'rules'           => [
-                    'admin/<action>' => '/admin/default/<action>',
+                    "admin/<action>" => "admin/default/<action>",
                 ],
             ],
         ],

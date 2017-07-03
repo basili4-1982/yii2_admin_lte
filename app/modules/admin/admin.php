@@ -10,7 +10,7 @@ class admin extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'app\modules\controllers';
+    public $controllerNamespace = 'vendor\basili4\adminlte\controllers';
 
     /**
      * @inheritdoc
@@ -18,7 +18,7 @@ class admin extends \yii\base\Module
     public function init()
     {
         parent::init();
-
+        
         // custom initialization code goes here
     }
 }
