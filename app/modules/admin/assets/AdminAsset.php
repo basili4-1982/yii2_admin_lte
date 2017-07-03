@@ -8,11 +8,13 @@
     {
         public $basePath = '@webroot';
         public $baseUrl = '@web';
-        public $css = [
-        ];
-        public $js = [
-        ];
+        public $css = [];
+        public $js = [];
         public $depends = [
-            'yii\bootstrap\BootstrapAsset',
+            'yii\web\JqueryAsset',
+            'vendor\basili4\adminlte\assets\BootstrapAsset',
+            'vendor\basili4\adminlte\assets\AdminLteAsset',
+            'vendor\basili4\adminlte\assets\FontAwesomeAsset',
+            'vendor\basili4\adminlte\assets\IonIconsAsset',
         ];
     }

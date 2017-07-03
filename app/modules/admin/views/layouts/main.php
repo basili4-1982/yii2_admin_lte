@@ -1,8 +1,8 @@
 <?php
-    use vendor\basili4\adminlte\assets\AdminAsset;
+    use vendor\basili4\adminlte\assets;
     use yii\helpers\Html;
     
-    AdminAsset::register($this);
+    assets\AdminAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

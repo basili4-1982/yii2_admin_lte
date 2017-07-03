@@ -18,7 +18,8 @@ class admin extends \yii\base\Module
     public function init()
     {
         parent::init();
-        
+    
+        \Yii::setAlias('@adminlte', realpath(__DIR__));
         // custom initialization code goes here
     }
 }
