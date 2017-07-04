@@ -23,11 +23,15 @@ class admin extends \yii\base\Module
     {
         parent::init();
     
-        \Yii::setAlias('@adminlte', realpath(__DIR__));
-        // custom initialization code goes here
+        $this->setAliases([
+            '@adminlte' => realpath(__DIR__),
+            '@widgets'  => realpath(__DIR__ . "/widgets"),
+        ]);
         
+        // custom initialization code goes here
         $this->paths['adminlte']='@adminlte/vendor/almasaeed2010/adminlte';
     }
+    
     
     public function assetsPathByName($name)
     {
