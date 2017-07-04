@@ -7,6 +7,10 @@ namespace vendor\basili4\adminlte;
  */
 class admin extends \yii\base\Module
 {
+    
+    protected $paths=[];
+    
+    
     /**
      * @inheritdoc
      */
@@ -21,5 +25,18 @@ class admin extends \yii\base\Module
     
         \Yii::setAlias('@adminlte', realpath(__DIR__));
         // custom initialization code goes here
+        
+        $this->paths['adminlte']='@adminlte/vendor/almasaeed2010/adminlte';
+    }
+    
+    public function assetsPathByName($name)
+    {
+        $path = '';
+        if (isset($this->paths[ $name ])) {
+            $publishedPath = \Yii::$app->assetManager->publish($this->paths[ $name ]);
+            $path = $publishedPath[1];
+        }
+    
+        return $path;
     }
 }
