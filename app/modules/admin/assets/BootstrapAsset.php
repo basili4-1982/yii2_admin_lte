@@ -5,9 +5,7 @@
      * Date: 04.07.17
      * Time: 0:11
      */
-    
-    namespace vendor\basili4\adminlte\assets;
-    
+
     namespace vendor\basili4\adminlte\assets;
     
     use yii\web\AssetBundle;
