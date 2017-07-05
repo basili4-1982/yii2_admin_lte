@@ -21,7 +21,6 @@
             'text' => 'New Orders',
             'moreText' => 'На фыавфыва',
             'moreLink' => '/sadas',
-            'container'=>'col-lg-2 col-xs-4'
         ]) ?>
         
         <?= widgets\InfoWidget::widget([
