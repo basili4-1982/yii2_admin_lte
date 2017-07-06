@@ -16,5 +16,6 @@
             'vendor\basili4\adminlte\assets\AdminLteAsset',
             'vendor\basili4\adminlte\assets\FontAwesomeAsset',
             'vendor\basili4\adminlte\assets\IonIconsAsset',
+            'vendor\basili4\adminlte\assets\ChatAsset',
         ];
     }

@@ -21,7 +21,7 @@
         public $js = [
             "https://code.jquery.com/ui/1.11.4/jquery-ui.min.js",
             "https://code.jquery.com/ui/1.11.4/jquery-ui.min.js",
-            "plugins/morris/morris.js",
+//            "plugins/morris/morris.js",
             "plugins/sparkline/jquery.sparkline.js",
             "plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
             "plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
@@ -33,7 +33,7 @@
             "plugins/slimScroll/jquery.slimscroll.js",
             "plugins/fastclick/fastclick.js",
             "dist/js/app.js",
-            "dist/js/pages/dashboard.js",
+//            "dist/js/pages/dashboard.js",
             "dist/js/demo.js"
         ];
         public $depends = [];

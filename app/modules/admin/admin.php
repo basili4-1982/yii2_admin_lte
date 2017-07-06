@@ -8,8 +8,9 @@ namespace vendor\basili4\adminlte;
 class admin extends \yii\base\Module
 {
     
-    protected $paths=[];
+    protected $paths = [];
     
+    public $limit = 100;
     
     /**
      * @inheritdoc
@@ -23,6 +24,26 @@ class admin extends \yii\base\Module
     {
         parent::init();
     
+        /**
+         * @var yii\i18n\I18N
+         */
+        $i18n = \Yii::$app->i18n;
+        if (!is_null($i18n) && !isset($i18n->translations['adminlte'])) {
+            $i18n->translations['adminlte'] = [
+                'class'          => 'yii\i18n\PhpMessageSource',
+                'sourceLanguage' => \Yii::$app->sourceLanguage,
+                'basePath'       => '@adminlte/messages',
+        
+            ];
+        }
+        
+        
+//        $rules=\Yii::$app->urlManager->rules;
+//
+//        $rules['admin/chat/<action>'] = 'admin/chat/<action>';
+        
+        
+        
         $this->setAliases([
             '@adminlte' => realpath(__DIR__),
             '@widgets'  => realpath(__DIR__ . "/widgets"),

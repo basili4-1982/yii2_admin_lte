@@ -10,7 +10,7 @@
         "codeception/codeception": "*"
     },
     "require-dev": {
-        "phpmd/phpmd" : "@stable"
+        "phpmd/phpmd" : "2.6.0"
     },
     "authors": [
         {

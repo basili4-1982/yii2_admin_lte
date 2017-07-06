@@ -8,6 +8,7 @@
     
     use \vendor\basili4\adminlte\widgets;
     
+    
     /**
      * @var $this \yii\web\View
      */
@@ -46,5 +47,12 @@
         ]) ?>
     </div>
     <!-- /.row -->
+    <div class="row">
+        <section class="col-lg-7 connectedSortable">
+            <?= widgets\ChatWidget::widget(['items'=>$items]) ?>
+        </section>
+    </div>
     <!-- Main row -->
 </section>
+
+

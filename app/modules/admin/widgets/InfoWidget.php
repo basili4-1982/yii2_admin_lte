@@ -63,7 +63,7 @@
                 $this->background = self::AQUA;
             }
             
-            return $this->render('view',
+            return $this->render('info',
                 [
                     'background' => $this->background,
                     'title'      => $this->title,

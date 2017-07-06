@@ -15,7 +15,18 @@
                 'class' => 'vendor\basili4\adminlte\admin',
             ],
         ],
+        'sourceLanguage' => 'en',
+        'language' => 'ru',
         'components' => [
+            'i18n' => [
+                'translations' => [
+                    'app*' => [
+                        'class' => 'yii\i18n\PhpMessageSource',
+                        'basePath' => '@app/messages',
+                        //'sourceLanguage' => 'en-US',
+                    ],
+                ],
+            ],
             'request' => [
                 'enableCookieValidation' => true,
                 'enableCsrfValidation'   => true,
